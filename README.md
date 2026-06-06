@@ -96,9 +96,11 @@ Industry-EDA-Project/
 | **Regions** | Asia, North America, Europe |
 | **Founded Year Range** | 1990 – 2020 |
 
-### Original Columns
+### Dataset Dictionary (Post-Auditing)
 
-| Column | Type | Description |
+> *Note: The data types listed below reflect the optimized, memory-efficient formats applied during Phase 1–3 Data Auditing (e.g., casting raw string objects to `Categorical` and `Date` types), rather than the raw, unoptimized CSV formats.*
+
+| Column | Optimized Type | Description |
 |---|---|---|
 | `id` | Integer | Unique identifier — dropped during transformation |
 | `company_name` | Text | Company name |
