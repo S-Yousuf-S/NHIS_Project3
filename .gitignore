@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Custom Project Additions ---
+
+# Ignore our specific virtual environment folder
+eda_env/
+
+# OS-generated hidden files (prevents accidental clutter)
+.DS_Store
+Thumbs.db
