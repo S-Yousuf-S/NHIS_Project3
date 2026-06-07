@@ -27,10 +27,36 @@
 
 **Global Enterprise Analytics** is a comprehensive Exploratory Data Analysis (EDA) pipeline evaluating the operational and financial performance of **15,000 global companies** across 5 industries, 4 countries, and 3 geographic regions.
 
-The primary analytical goal was to go beyond standard surface-level reporting and uncover the underlying patterns that separate average market participants from elite **Market Leaders.** By transitioning from baseline metrics to engineered efficiency ratios, this project mathematically proves that competitive advantage is not found in gross company size — but in **operational efficiency.**
+The primary analytical goal was to go beyond standard surface-level reporting and uncover the underlying patterns that separate average market participants from elite **Market Leaders.** The analysis indicates that operational efficiency provides deeper insight into company performance than absolute scale alone.
 
 > ### 🧪 Statistical Validation
 > A rigorous auditing process — including Skewness & Kurtosis evaluation and targeted IQR Outlier Detection — was applied throughout to ensure all business intelligence derived from this dataset is structurally sound.
+
+---
+
+## 🎯 Project Objectives
+
+This project aims to:
+
+- Assess the overall structure and quality of the dataset.
+- Understand the distribution of key business metrics.
+- Explore relationships between financial, operational, and market variables.
+- Create derived metrics that better represent operational efficiency.
+- Identify patterns across industries, regions, and business models.
+- Communicate findings through business-focused visualizations and dashboards.
+
+--- 
+
+## ❓ Key Business Questions
+
+This analysis seeks to answer the following questions:
+
+1. Does company size directly influence revenue generation?
+2. Which industries demonstrate the highest operational efficiency?
+3. Do geographic regions impact business performance?
+4. Which business models generate the strongest revenue efficiency?
+5. Are extreme performers genuine market leaders or statistical outliers?
+6. What characteristics distinguish top-performing companies from the rest of the market?
 
 ---
 
@@ -73,9 +99,7 @@ Industry-EDA-Project/
 ├── Assets/
 │   ├── INDUSTRY.csv                        # Source dataset (15,000 rows × 12 columns)
 │   └── full_kpi_dashboard.png              # Executive KPI dashboard (hero image)
-│
-├── EDA_ENV/                                # Virtual environment (not tracked in Git)
-│
+|
 ├── Industry_Performance_EDA_v2.0.ipynb     # Main analysis notebook
 ├── requirements.txt                        # Python dependencies
 └── README.md                               # This file
@@ -127,7 +151,7 @@ Ten additional features were engineered to expose operational dynamics not visib
 | `rev_per_emp` | Revenue per employee — measures workforce efficiency |
 | `rev_per_customer` | Revenue per customer — measures customer value |
 | `cust_per_emp` | Customers per employee — measures operational scale |
-| `industry_density` | Number of competitors operating in the same sector |
+| `industry_density` | Number of companies within the same industry and geographic region |
 | `age_tier` | Company lifecycle stage — Growth or Established |
 | `rating_tier` | Market performance bracket — Low Performer, Average Performer, or Market Leader |
 | `revenue_tier` | Revenue scale — Micro, Medium, Large, or Enterprise |
@@ -138,13 +162,13 @@ Ten additional features were engineered to expose operational dynamics not visib
 
 ## 📈 Key Findings
 
-- **Industry does not determine success.** All five sectors produce identical proportions of Market Leaders, Average Performers, and Low Performers. Sector alone cannot predict financial outcome.
+- **Industry alone does not appear to determine success.** Similar distributions of market performance were observed across all five sectors.
 
 - **Raw size does not drive revenue.** The correlation between employee count and annual revenue is effectively zero (−0.002). Headcount growth does not produce proportional revenue growth.
 
 - **Efficiency is the real differentiator.** Engineered efficiency ratios revealed massive performance gaps completely invisible in the raw data.
 
-- **The Technology Niche anomaly.** Technology companies operating under a Niche business model generate approximately **$3.0M revenue per employee** — the highest efficiency ratio of any industry-model combination in the entire dataset.
+- **The Technology Niche Segment.** Technology companies operating under a Niche business model generate approximately **$3.0M revenue per employee** — the highest efficiency ratio of any industry-model combination in the entire dataset.
 
 - **Scale and profitability trade off.** The largest Mass-Scale business models lead in total revenue but operate at the lowest profit margins. Smaller, focused operations consistently show stronger margin efficiency.
 
@@ -152,7 +176,7 @@ Ten additional features were engineered to expose operational dynamics not visib
 
 - **Outliers represent genuine elite performers.** Approximately 11% of companies in the efficiency metrics fall outside the standard range. These were intentionally retained as they represent a distinct class of highly scalable, lean-operating businesses.
 
-- **Geographic and temporal neutrality.** Country, region, and founding year showed near-zero correlation with revenue outcomes. Where a company is located or when it was founded does not determine how well it performs.
+- **Geographic and temporal neutrality.** Correlation analysis revealed very weak linear relationships between revenue and variables such as region, country, and company age. Where a company is located or when it was founded does not determine how well it performs.
 
 ---
 
@@ -272,6 +296,8 @@ jupyter notebook Industry_Performance_EDA_v2.0.ipynb
 ## 🎯 Conclusion
 
 This project demonstrates that a structured, story-driven EDA pipeline can extract non-obvious business intelligence from even a synthetically uniform dataset. Every analytical decision — from retaining outliers to engineering efficiency ratios — was made with deliberate purpose, ensuring the insights delivered are grounded, defensible, and actionable.
+
+This analysis highlights the importance of looking beyond raw company size when evaluating business performance. While revenue, employee count, and customer volume provide useful context, engineered efficiency metrics reveal deeper operational differences that are not immediately visible in the original dataset.
 
 ---
 
