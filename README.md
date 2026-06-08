@@ -97,12 +97,13 @@ IQR methodology applied to isolate the top ~11% of the dataset. These hyper-effi
 Industry-EDA-Project/
 │
 ├── Assets/
-│   ├── INDUSTRY.csv                        # Source dataset (15,000 rows × 12 columns)
-│   └── full_kpi_dashboard.png              # Executive KPI dashboard (hero image)
+│   ├── INDUSTRY.csv                              # Source dataset (15,000 rows × 12 columns)
+│   └── full_kpi_dashboard.png                    # Executive KPI dashboard (hero image)
 |
-├── Industry_Performance_EDA_v2.0.ipynb     # Main analysis notebook
-├── requirements.txt                        # Python dependencies
-└── README.md                               # This file
+├── Industry_Performance_Presentation_YS.pptx     # PowerpointPresentation about the project
+├── Industry_Performance_EDA_v2.0.ipynb           # Main analysis notebook
+├── requirements.txt                              # Python dependencies
+└── README.md                                     # This file
 ```
 
 ---
