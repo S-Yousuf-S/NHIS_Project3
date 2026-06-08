@@ -12,7 +12,7 @@
 > **⚠️ EVALUATION NOTICE:**
 > The core statistical methodologies, strategic interpretations, and executive business insights are detailed
 > explicitly in the presentation's **Speaker Notes**. Please download the raw
-> `Industry_Performance_Presentation.pptx` file to access the full analytical breakdown.
+> `Industry_Performance_Presentation_YS.pptx` file to access the full analytical breakdown.
 
 ---
 
